@@ -1,0 +1,11 @@
+name: BlizzardCore
+version: 2.0
+main: me.dominator.alert.Main
+depend: [LilyPad-Connect]
+commands:
+  alert:
+    description: Alert to all servers
+  dispatch:
+    description: Dispatch commands
+  a:
+    description: Talk in staff chat
