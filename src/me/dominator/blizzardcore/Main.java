@@ -1,10 +1,8 @@
 package me.dominator.blizzardcore;
 
-import java.io.File;
 import java.io.UnsupportedEncodingException;
 import java.util.Collections;
 
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import lilypad.client.connect.api.Connect;
@@ -17,13 +15,8 @@ import me.dominator.blizzardcore.Listeners.LilyListener;
 
 public class Main extends JavaPlugin {
 	
-	public FileConfiguration config;
-	File cfile;
 	
 	public void onEnable(){
-		config = getConfig();
-		config.options().copyDefaults(true);
-		cfile = new File(getDataFolder(), "config.yml");
 		saveConfig();
 		getCommand("alert").setExecutor(new AlertCommand(this));
 		getCommand("dispatch").setExecutor(new DispatchCommand(this));
