@@ -1,5 +1,5 @@
 name: BlizzardCore
-version: 2.0
+version: 0.5-SNAPSHOT
 main: me.dominator.alert.Main
 depend: [LilyPad-Connect]
 commands:
@@ -9,3 +9,5 @@ commands:
     description: Dispatch commands
   a:
     description: Talk in staff chat
+  info:
+    description: Get the plugin info

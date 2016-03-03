@@ -10,6 +10,7 @@ import lilypad.client.connect.api.request.RequestException;
 import lilypad.client.connect.api.request.impl.MessageRequest;
 import me.dominator.blizzardcore.Commands.AlertCommand;
 import me.dominator.blizzardcore.Commands.DispatchCommand;
+import me.dominator.blizzardcore.Commands.InfoCommand;
 import me.dominator.blizzardcore.Commands.StaffChatCommand;
 import me.dominator.blizzardcore.Listeners.LilyListener;
 
@@ -20,6 +21,7 @@ public class Main extends JavaPlugin {
 		getCommand("alert").setExecutor(new AlertCommand(this));
 		getCommand("dispatch").setExecutor(new DispatchCommand(this));
 		getCommand("a").setExecutor(new StaffChatCommand(this));
+		getCommand("info").setExecutor(new InfoCommand(this));
 		getBukkitConnect().registerEvents(new LilyListener(this));
 	}
 	public void onDisable(){
