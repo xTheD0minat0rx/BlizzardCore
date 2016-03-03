@@ -17,7 +17,6 @@ public class Main extends JavaPlugin {
 	
 	
 	public void onEnable(){
-		saveConfig();
 		getCommand("alert").setExecutor(new AlertCommand(this));
 		getCommand("dispatch").setExecutor(new DispatchCommand(this));
 		getCommand("a").setExecutor(new StaffChatCommand(this));
