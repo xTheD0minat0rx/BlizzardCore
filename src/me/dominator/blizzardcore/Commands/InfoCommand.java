@@ -21,7 +21,7 @@ public class InfoCommand implements CommandExecutor {
 		}
 		sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&8&m--------------------------------"));
 		sender.sendMessage(ChatColor.translateAlternateColorCodes('&', ""));
-		sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cBlizzardCore - Version: ") + plugin.getDescription().getVersion());
+		sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cBlizzardCore - Version: " + plugin.getDescription().getVersion()));
 		sender.sendMessage(ChatColor.translateAlternateColorCodes('&', ""));
 		sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&8&m--------------------------------"));
 		
